@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIK Flowise Overview</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Import Chatbot script -->
+    <script type="module">
+        import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js";
+        
+        Chatbot.init({
+            chatflowid: "a6c18730-3389-43a0-80b8-9175c5adef37",
+            apiHost: "https://flowise-8vb3.onrender.com",
+            chatflowConfig: {
+                // topK: 2
+            },
+            theme: {
+                button: {
+                    backgroundColor: "linear-gradient(to right, #667eea, #764ba2)",
+                    right: 20,
+                    bottom: 20,
+                    size: 48, // small | medium | large | number
+                    dragAndDrop: true,
+                    iconColor: "white",
+                    customIconSrc: "https://mir-s3-cdn-cf.behance.net/projects/max_808/aba3a466532591.Y3JvcCwzNjgyLDI4ODIsMTQ1LDYz.png",
+                },
+                chatWindow: {
+                    showTitle: true,
+                    title: 'Flowise Chatbot',
+                    titleAvatarSrc: 'https://mir-s3-cdn-cf.behance.net/projects/max_808/aba3a466532591.Y3JvcCwzNjgyLDI4ODIsMTQ1LDYz.png',
+                    welcomeMessage: 'Hello! How can I assist you today?',
+                    errorMessage: 'Oops! Something went wrong. Please try again later.',
+                    backgroundColor: "#f8f9fa",
+                    height: 550, // Keep height unchanged
+                    width: 400, // Keep width unchanged
+                    fontSize: 16,
+                    poweredByTextColor: "#333",
+                    botMessage: {
+                        backgroundColor: "#fff",
+                        textColor: "#333",
+                        showAvatar: true,
+                        avatarSrc: "https://th.bing.com/th/id/R.ef167818010d7b9a15fa5697db41a297?rik=QBZpu9ZxHC8a8w&pid=ImgRaw&r=0",
+                    },
+                    userMessage: {
+                        backgroundColor: "#007bff",
+                        textColor: "#fff",
+                        showAvatar: true,
+                        avatarSrc: "https://th.bing.com/th/id/R.47cecf6ce91d73af7900067efeaacb63?rik=%2btKMy%2fBRVLblKA&pid=ImgRaw&r=0",
+                    },
+                    textInput: {
+                        placeholder: 'Type your question',
+                        backgroundColor: '#fff',
+                        textColor: '#333',
+                        sendButtonColor: '#007bff',
+                        maxChars: 50,
+                        maxCharsWarningMessage: 'You exceeded the characters limit. Please input less than 50 characters.',
+                    },
+                    feedback: {
+                        color: '#333',
+                    },
+                    footer: {
+                        textColor: '#FFF',
+                        text: 'Powered by',
+                        company: 'Flowise',
+                        companyLink: 'https://flowiseai.com',
+                    }
+                }
+            }
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>AIK Flowise</h1>
+    </header>
+    <main>
+        <section id="overview" class="fade-in">
+            <div class="content">
+                <h2>Overview</h2>
+                <p>AIK Flowise is a state-of-the-art platform that leverages artificial intelligence to streamline workflows and optimize productivity. Designed for both individual and enterprise use, AIK Flowise integrates seamlessly with existing systems to provide insights and automate routine tasks.</p>
+            </div>
+        </section>
+        <section id="features" class="fade-in delay-1">
+            <div class="content">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Automated Workflow Management</li>
+                    <li>Intuitive User Interface</li>
+                    <li>Advanced Analytics and Reporting</li>
+                    <li>Seamless Integration</li>
+                    <li>Customizable Solutions</li>
+                </ul>
+            </div>
+        </section>
+        <section id="contact" class="fade-in delay-2">
+            <div class="content">
+                <h2>Contact Us</h2>
+                <p>For more information, visit our <a href="https://www.example.com">website</a> or contact us at <a href="mailto:info@aikflowise.com">info@aikflowise.com</a>.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 AIK Flowise. All rights reserved.</p>
+    </footer>
+</body>
+</html>
